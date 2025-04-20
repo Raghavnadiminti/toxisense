@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    padding-top: 64px;
+    /* Adjust based on your navbar height */
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color: white;
+  }
+
+  .hgt{
+    min-height: 80vh;
+  }
+  .anim{
+    margin-bottom: 50px;
+  }
+  .scroll-offset {
+    scroll-margin-top: 100px; /* or whatever your navbar height is */
+  }
+
+  .main{
+    background-color: whitesmoke;
+  }
+
+  .text{
+    background-color: rgb(70, 70, 70);
+    color: rgb(255, 204, 138);
+  }
+
+.nav-top{
+  background: linear-gradient(135deg, orange 60%, cyan);
+}
+
+/* Navbar.css */
+
+/* Navigation container */
+.bt-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* equivalent to space-x-8 */
+  }
+  
+  /* Base link styles */
+  .link1 {
+    color: black; /* text-black */
+    padding: 0.5rem 1rem; /* px-4 py-2 */
+    text-decoration: none;
+    transition: color 0.2s ease; /* transition-colors duration-200 */
+    position: relative;
+  }
+  
+  /* Hover effects */
+  .link1:hover {
+    color: #f97316; /* Same as Tailwind's orange-500 */
+  }
+  
+  /* Bottom border on hover */
+  .link1:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; /* hover:border-b-2 */
+    background-color: whitesmoke; /* hover:border-orange-500 */
+  }
+
+  .nav-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensures nav stays above other content */
+    width: 100%;
+  }
