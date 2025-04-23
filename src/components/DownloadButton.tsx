@@ -1,9 +1,11 @@
-
-
 export default function DownloadButton() {
   const handleDownload = () => {
-    // Implement download functionality here
-    console.log('Download clicked');
+    const link = document.createElement('a');
+    link.href = '/dti.zip';       
+    link.download = 'dti.zip';   
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
