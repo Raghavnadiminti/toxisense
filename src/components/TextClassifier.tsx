@@ -7,7 +7,7 @@ export default function TextClassifier() {
 
   const analyzeText = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/analyze-text', { text });
+      const response = await axios.post('https://perspective-api-backend.onrender.com/analyze-text', { text });
       setToxicityScore(response.data.toxicityScore);
     } catch (error) {
       console.error('Error analyzing text:', error);
