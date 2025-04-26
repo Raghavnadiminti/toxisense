@@ -1,6 +1,7 @@
 import picKarthik from '../assets/karthik.jpg';
 import picAvi from '../assets/avi.jpg';
 import picBalu from '../assets/balu.jpg';
+import picRaghav from '../assets/raghav.png'
 
 interface Developer {
   name: string;
@@ -23,7 +24,7 @@ const developers: Developer[] = [
     specialization: "Machine Learning Engineer",
     email: "raghavendranadiminti@gmail.com",
     linkedin: "https://linkedin.com/in/raghavendranadiminti",
-    image: "#picRaghav"
+    image: picRaghav
   },
   {
     name: "Balu Perla",
