@@ -1,7 +1,7 @@
 import picKarthik from '../assets/karthik.jpg';
 import picAvi from '../assets/avi.jpg';
 import picBalu from '../assets/balu.jpg';
-import picRaghav from '../assets/raghav.png'
+import picRaghav from '../assets/raghav.jpg'
 
 interface Developer {
   name: string;

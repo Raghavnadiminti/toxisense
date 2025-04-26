@@ -7,6 +7,7 @@ import HowToUse from './pages/HowToUse';
 import FAQ from './pages/FAQ';
 import Hero from './components/Hero';
 import Footer from './components/Footer';
+import vdio from './assets/vid.mp4'
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
         playsInline
         className="fixed top-0 left-0 w-full h-full object-cover z-[-1]"
       >
-        <source src="/No Copyright Video, Background, Green Screen, Motion Graphics, Animated Background, Copyright Free.mp4" type="video/mp4" />
+        <source src={vdio} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       
