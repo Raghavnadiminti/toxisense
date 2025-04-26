@@ -7,7 +7,7 @@ import HowToUse from './pages/HowToUse';
 import FAQ from './pages/FAQ';
 import Hero from './components/Hero';
 import Footer from './components/Footer';
-import vdio from './assets/vid.mp4'
+import vdio from './assets/vi.mp4'
 
 
 function App() {
