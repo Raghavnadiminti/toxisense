@@ -2,11 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    padding-top: 64px;
-    /* Adjust based on your navbar height */
-  }
 
+
+
+.box{
+  margin-top: -30px;
+  background-color: rgb(24, 24, 24);
+  color: beige;
+}
+
+.res{
+  font-size: 20px;
+  color: whitesmoke;
+}
   html {
     scroll-behavior: smooth;
     color: white;
@@ -21,10 +29,10 @@ body {
   .scroll-offset {
     scroll-margin-top: 100px; /* or whatever your navbar height is */
   }
-
-  .main{
-    background-color: whitesmoke;
-  }
+.her{
+  margin-top: -5px;
+}
+ 
 
   .text{
     background-color: rgb(70, 70, 70);
@@ -32,7 +40,8 @@ body {
   }
 
 .nav-top{
-  background: linear-gradient(135deg, orange 60%, cyan);
+  color: azure;
+  background: none;
 }
 
 /* Navbar.css */
@@ -46,7 +55,7 @@ body {
   
   /* Base link styles */
   .link1 {
-    color: black; /* text-black */
+    color: white; /* text-black */
     padding: 0.5rem 1rem; /* px-4 py-2 */
     text-decoration: none;
     transition: color 0.2s ease; /* transition-colors duration-200 */

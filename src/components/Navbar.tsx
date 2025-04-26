@@ -1,5 +1,5 @@
-import vignanlogo from '../assets/vignanlogo.png';
-import cselogo from '../assets/cselogo.png';
+import vignanlogo from '../assets/vignan-removebg-preview.png';
+import cselogo from '../assets/cselogo-removebg-preview.png';
 
 export default function Navbar() {
   return (
@@ -12,9 +12,9 @@ export default function Navbar() {
           </div>
 
           <div className="flex space-x-8 bt-nav">
-            <a href="#home" className="text-gray-700 hover:text-gray-900 link1">Home</a>
-            <a href="#about" className="text-gray-700 hover:text-gray-900 link1">About Us</a>
-            <a href="#contact" className="text-gray-700 hover:text-gray-900 link1">Contact Us</a>
+            <a href="#home" className="text-white-700 hover:text-white-900 link1">Home</a>
+            <a href="#about" className="text-white-700 hover:text-white-900 link1">About Us</a>
+            <a href="#contact" className="text-white-700 hover:text-white-900 link1">Contact Us</a>
           </div>
 
           <div className="flex-shrink-0">

@@ -3,28 +3,46 @@ import TextClassifier from './components/TextClassifier';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import DownloadButton from './components/DownloadButton';
+import HowToUse from './pages/HowToUse';
+import FAQ from './pages/FAQ';
 import Hero from './components/Hero';
 import Footer from './components/Footer';
 
 
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#020024] via-[#090979] to-[#00D4FF] main scroll-smooth">
-
+    <div className="min-h-screen main scroll-smooth">
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="fixed top-0 left-0 w-full h-full object-cover z-[-1]"
+      >
+        <source src="/No Copyright Video, Background, Green Screen, Motion Graphics, Animated Background, Copyright Free.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      
       <Navbar />
       
       <main className="container mx-auto px-4 py-8 space-y-20">
-        <section id="home" className="hgt scroll-offset">
-          <Hero />
-          <TextClassifier />
-        </section>
-        <section id="about" className="hgt scroll-offset">
-          <About />
-        </section>
-        <section id="contact" className="hgt scroll-offset">
-          <Contact />
-        </section>
-      </main>
+          <section id="home" className="hgt scroll-offset">
+            <Hero />
+            <TextClassifier />
+          </section>
+          <section id="about" className="hgt scroll-offset">
+            <About />
+          </section>
+          <section id="how-to-use" className="hgt scroll-offset">
+            <HowToUse />
+          </section>
+          <section id="faq" className="hgt scroll-offset">
+            <FAQ />
+          </section>
+          <section id="contact" className="hgt scroll-offset">
+            <Contact />
+          </section>
+        </main>
       <DownloadButton />
       <Footer />
     </div>

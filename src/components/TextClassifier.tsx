@@ -33,7 +33,7 @@ export default function TextClassifier() {
   return (
     <div className="flex flex-col items-center space-y-4 hgt">
       <textarea
-        className="w-[500px] h-[300px] p-4 border rounded-lg shadow-sm resize-none text-black"
+        className="w-[500px] h-[300px] p-4 border rounded-lg shadow-sm resize-none text-black box"
         placeholder="Enter your text here..."
         value={text}
         onChange={(e) => setText(e.target.value)}
@@ -45,10 +45,10 @@ export default function TextClassifier() {
         Analyze Text
       </button>
       {toxicityScore !== null && (
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-2 floating-word res">
           <div className={`w-3 h-3 rounded-full ${getStatusColor()}`} />
           <span className="capitalize">{getClassification()}</span>
-          <span className="text-sm text-gray-600">({(toxicityScore * 100).toFixed(2)}%)</span>
+          <span className="text-sm text-white-600">({(toxicityScore * 100).toFixed(2)}%)</span>
         </div>
       )}
     </div>
